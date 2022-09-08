@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Sep 04 18:02:36 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>48 seconds (48232 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.RunTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC001 Create a Incident without any body in the HTTP request", "Incident Management in the Service now application"</td>
+<td></td>
+<td>3</td>
+<td>runner.RunTest@51cd7ffc</td></tr>
+<tr>
+<td title='runner.RunTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC002 Create a Incident with body as file in the HTTP request", "Incident Management in the Service now application"</td>
+<td></td>
+<td>3</td>
+<td>runner.RunTest@51cd7ffc</td></tr>
+<tr>
+<td title='runner.RunTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC002 Create a Incident with body as file in the HTTP request", "Incident Management in the Service now application"</td>
+<td></td>
+<td>4</td>
+<td>runner.RunTest@51cd7ffc</td></tr>
+<tr>
+<td title='runner.RunTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC003 Get a Incident with default response type", "Incident Management in the Service now application"</td>
+<td></td>
+<td>4</td>
+<td>runner.RunTest@51cd7ffc</td></tr>
+<tr>
+<td title='runner.RunTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC004 Get a Incident with filter category", "Incident Management in the Service now application"</td>
+<td></td>
+<td>5</td>
+<td>runner.RunTest@51cd7ffc</td></tr>
+<tr>
+<td title='chain.DeleteIncidentTest.sendDeleteRequest()'><b>sendDeleteRequest</b><br>Test class: chain.DeleteIncidentTest</td>
+<td></td>
+<td>4</td>
+<td>chain.DeleteIncidentTest@5c87bfe2</td></tr>
+<tr>
+<td title='chain.GetIncidentTest.sendGetRequest()'><b>sendGetRequest</b><br>Test class: chain.GetIncidentTest</td>
+<td></td>
+<td>6</td>
+<td>chain.GetIncidentTest@2fea7088</td></tr>
+<tr>
+<td title='chain.CreateIncidentTest.sendPostRequest()'><b>sendPostRequest</b><br>Test class: chain.CreateIncidentTest<br>Parameters: CreateIncident.json, JSON</td>
+<td></td>
+<td>5</td>
+<td>chain.CreateIncidentTest@f73dcd6</td></tr>
+<tr>
+<td title='chain.CreateIncidentTest.sendPostRequest()'><b>sendPostRequest</b><br>Test class: chain.CreateIncidentTest<br>Parameters: CreateIncident.xml, XML</td>
+<td></td>
+<td>4</td>
+<td>chain.CreateIncidentTest@f73dcd6</td></tr>
+<tr>
+<td title='chain.UpdateIncidentTest.sendUpdateRequest()'><b>sendUpdateRequest</b><br>Test class: chain.UpdateIncidentTest</td>
+<td></td>
+<td>3</td>
+<td>chain.UpdateIncidentTest@40499e4f</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="8" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="46828" started-at="2022-09-04T18:00:21 IST" finished-at="2022-09-04T18:01:08 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="46828" started-at="2022-09-04T18:00:21 IST" finished-at="2022-09-04T18:01:08 IST">
+      <class name="chain.GetIncidentTest">
+        <test-method status="PASS" signature="sendGetRequest()[pri:0, instance:chain.GetIncidentTest@388ffbc2]" name="sendGetRequest" duration-ms="13317" started-at="2022-09-04T18:00:21 IST" finished-at="2022-09-04T18:00:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendGetRequest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:chain.GetIncidentTest@388ffbc2]" name="after" is-config="true" duration-ms="34" started-at="2022-09-04T18:00:34 IST" finished-at="2022-09-04T18:00:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- chain.GetIncidentTest -->
+      <class name="chain.UpdateIncidentTest">
+        <test-method status="PASS" signature="sendUpdateRequest()[pri:0, instance:chain.UpdateIncidentTest@43ed0ff3]" name="sendUpdateRequest" duration-ms="15321" started-at="2022-09-04T18:00:47 IST" depends-on-methods="chain.CreateIncidentTest.sendPostRequest" finished-at="2022-09-04T18:01:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendUpdateRequest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:chain.UpdateIncidentTest@43ed0ff3]" name="after" is-config="true" duration-ms="1" started-at="2022-09-04T18:01:02 IST" finished-at="2022-09-04T18:01:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- chain.UpdateIncidentTest -->
+      <class name="chain.DeleteIncidentTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:chain.DeleteIncidentTest@2a76b80a]" name="before" is-config="true" duration-ms="763" started-at="2022-09-04T18:00:20 IST" finished-at="2022-09-04T18:00:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="sendDeleteRequest()[pri:0, instance:chain.DeleteIncidentTest@2a76b80a]" name="sendDeleteRequest" duration-ms="5535" started-at="2022-09-04T18:01:02 IST" depends-on-methods="chain.UpdateIncidentTest.sendUpdateRequest" finished-at="2022-09-04T18:01:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendDeleteRequest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:chain.DeleteIncidentTest@2a76b80a]" name="after" is-config="true" duration-ms="1" started-at="2022-09-04T18:01:08 IST" finished-at="2022-09-04T18:01:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- chain.DeleteIncidentTest -->
+      <class name="chain.CreateIncidentTest">
+        <test-method status="PASS" signature="sendPostRequest(java.lang.String,java.lang.String)[pri:0, instance:chain.CreateIncidentTest@a50b09c]" name="sendPostRequest" duration-ms="4772" started-at="2022-09-04T18:00:34 IST" data-provider="fetchData" finished-at="2022-09-04T18:00:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateIncident.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[JSON]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendPostRequest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:chain.CreateIncidentTest@a50b09c]" name="after" is-config="true" duration-ms="1" started-at="2022-09-04T18:00:39 IST" finished-at="2022-09-04T18:00:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="sendPostRequest(java.lang.String,java.lang.String)[pri:0, instance:chain.CreateIncidentTest@a50b09c]" name="sendPostRequest" duration-ms="7680" started-at="2022-09-04T18:00:39 IST" data-provider="fetchData" finished-at="2022-09-04T18:00:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateIncident.xml]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[XML]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendPostRequest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:chain.CreateIncidentTest@a50b09c]" name="after" is-config="true" duration-ms="0" started-at="2022-09-04T18:00:47 IST" finished-at="2022-09-04T18:00:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- chain.CreateIncidentTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
